@@ -21,6 +21,8 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        supportActionBar?.hide()
+
         mAuth = FirebaseAuth.getInstance()
 
         edtEmail = findViewById(R.id.edt_email)
@@ -48,6 +50,7 @@ class Login : AppCompatActivity() {
                 if(task.isSuccessful){
                     //redirect to home page
                     val intent = Intent(this@Login, MainActivity::class.java)
+                    finish()
                     startActivity(intent)
                 }
                 else{
