@@ -1,5 +1,8 @@
 # ChatApp
 
+![App Screenshot](screenshots/screenshot1.png)
+![App Screenshot](screenshots/screenshot2.png)
+
 The ChatApp app is a secure and private chat application for Android, built using the following technologies:
 
 - Programming Language: Kotlin
